@@ -70,6 +70,7 @@
                 <form action="/del/{{i.id}}" method="POST" style="padding-right: 4%; padding-bottom: 3%;">
                     {% csrf_token %}
                     <button value="remove" type="submit" class="btn btn-primary" style="float: right;"><span class="glyphicon glyphicon-trash"></span> &nbsp; remove</button>
+					
                 </form>
             </div>
             {% endfor%}
