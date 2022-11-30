@@ -21,5 +21,6 @@ urlpatterns = [
     path('', views.index, name='todo'),
     path('del/<str:item_id>', views.remove, name='del'),
     path('admin/', admin.site.urls),
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 ]
